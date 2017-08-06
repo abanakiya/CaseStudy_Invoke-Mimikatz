@@ -1,0 +1,8 @@
+Second round of work on invoke-mimikatz, ref: https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/
+
+4 alerts as of 20170806
+No issue for storing/executing on Win10.0.15063
+Code worked on Win7, but didn't work on Win10.0.15063
+
+Method:
+get-clist to load code file (clist) into memory as string, replace strings that trigger alerts, run modified code from memory
