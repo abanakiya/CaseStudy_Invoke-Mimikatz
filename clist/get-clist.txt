@@ -1,6 +1,8 @@
+
+# OFFLINE, LOCAL CODE FILE NEEDED, SOURCE SELF-DELETE
 # Opens code file from dialog box, doesn't seem to work in ps3/win7, hangs..
 # Tested Win10/ps5, loaded OK
-# Invoke after code loaded to memory
+# Invoke-Clist
 
 function Get-CodePath() {
 
