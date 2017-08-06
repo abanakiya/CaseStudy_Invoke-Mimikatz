@@ -1,5 +1,7 @@
+# OFFLINE, LOCAL CODE FILE NEEDED, DELETE SOURCE CODE AFTER USE
 # Manually loads code into memory, compatible with older systems/ps3
 # Copy/paste into ps to load code, invoke after code loaded
+# Invoke-Clist
 
 # Modify file path as needed
 $strCPath = (get-location).path + "\clist.txt"
