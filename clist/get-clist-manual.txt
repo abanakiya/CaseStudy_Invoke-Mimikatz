@@ -1,9 +1,8 @@
 # OFFLINE, LOCAL CODE FILE NEEDED, CODE FILE SELF-DELETE
-# Manually loads code into memory, compatible with older systems/ps3
-# Copy/paste into ps to load code
-# Invoke-Clist
+# PS (X86 ONLY?) RUN CODE MANUALLY AS ADMIN
+# INVOKE-CLIST
 
-# MODIFY CODE FILE PATH AS NEEDED
+# MODIFY CODE FILE PATH AS NEEDED:
 
 $strCPath = "clist.txt"
 
