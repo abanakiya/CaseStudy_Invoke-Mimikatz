@@ -1,4 +1,5 @@
-﻿# ONLINE! MAKE SURE SOURCE CODE AS CLEAN AS POSSIBLE!
+# NO LOCAL SOURCE CODE NEEDED
+# ONLINE! MAKE SURE SOURCE CODE AS CLEAN AS POSSIBLE!
 # REF.(SECTION "TONY G"): https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/ 
 # Invoke-CList
 
