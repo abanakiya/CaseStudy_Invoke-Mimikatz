@@ -1,5 +1,6 @@
 First round of work on invoke-mimikatz, ref: https://www.blackhillsinfosec.com/bypass-anti-virus-run-mimikatz/
 
-[+] 15 alerts as of 20170806
-[+] No issue for storing/executing on Win7 w/SystemCentre2012, proper result
-[+] No issue for storing/executing on Win10.0.15063, no cred result for Win10.0.15063 though
+As of 20170806
+[+] 15 alerts on VirusTotal
+[+] Win7 (w/ SystemCentre2012, MalwareBytes): No issue for storing/executing, proper result
+[+] Win10 (10.0.15063): No issue for storing/executing on Win10.0.15063, no cred result
