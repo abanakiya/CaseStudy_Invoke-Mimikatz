@@ -2,8 +2,8 @@ Second round of work on invoke-mimikatz, ref: https://www.blackhillsinfosec.com/
 
 As of 20170806
 [+] 3 alerts on VirusTotal
-[+] Win7 (w/SystemCentre2012) Test: No issue for storing/executing, proper result
-[+] Win10 (10.0.15063) Test: No issue for storing/executing on Win10.0.15063, no cred result
+[+] Win7 (w/ SystemCentre2012, MalwareBytes): No issue for storing/executing, proper result
+[+] Win10 (10.0.15063): No issue for storing/executing, no cred result
 
 Method:
     Using get-clist (ps5 compatible) or get-clist-manual to load code (clist) into memory as string
